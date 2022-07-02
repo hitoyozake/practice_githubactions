@@ -9,5 +9,8 @@ jobs:
             - name: echo
               run: |
                   echo "hello"
-
+            - name: echo2
+              run: |
+                  echo "echo2"
+                  echo "echo3"
 
