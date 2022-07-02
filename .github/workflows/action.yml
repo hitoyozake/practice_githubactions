@@ -1,11 +1,11 @@
 name: RUNtest
 on: [push]
 
-jobs:
+jobs: # jobsは並列実行
     test:
         # OS
         runs-on: ubuntu-latest
-        steps:
+        steps: # stepsは上から順番に実行
             - name: echo
               run: |
                   echo "hello"
@@ -13,4 +13,11 @@ jobs:
               run: |
                   echo "echo2"
                   echo "echo3"
+        
+    test2:
+        runs-on: ubuntu-latest
+        steps:
+            - name: echo
+              run: |
+                  echo "test2 echo"
 
