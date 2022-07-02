@@ -1,0 +1,13 @@
+name: RUNtest
+on: [push]
+
+jobs:
+    test:
+        # OS
+        runs-on: ubuntu-latest
+        steps:
+            - name: echo
+              run: |
+                  echo "hello"
+
+
