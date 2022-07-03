@@ -1,5 +1,5 @@
 name: RUNtest
-on: [push]
+on: 
     push:
         branches:
             - main
