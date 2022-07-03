@@ -50,7 +50,9 @@ jobs: # jobsは並列実行
             - name: PyTest
               run: |
                 python -m pytest test --junit-xml results/pytest.xml
+              continue-on-error: true
 
+            
             # display test's result
             - name: Upload Unit Test Results
               if: ${{ always() }}
