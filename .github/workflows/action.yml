@@ -67,7 +67,7 @@ jobs: # jobsは並列実行
 
             # https://github.com/EnricoMi/publish-unit-test-result-action
             - name: Publish Unit Test Results
-              uses: EnricoMi/publish-unit-test-result-actin@v1
+              uses: EnricoMi/publish-unit-test-result-action@v1
               with:
                 files: artifacts/**/*.xml
 
