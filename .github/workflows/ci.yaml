@@ -1,0 +1,19 @@
+name: C++ CI
+
+on:
+    push:
+
+jobs:
+    build-and-test:
+        runs-on: ubuntu-latest
+        
+        steps:
+            - name: checkout code
+              uses: actions/checkout@v4
+
+            - name: install compiler
+              run: sudo apt-get install -y g++
+            
+            - name: build and test
+              run: make test # makeコマンドにtestがある。これでテストも走る
+        
