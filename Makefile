@@ -6,6 +6,5 @@ all: test
 build:
 	$(CXX) $(CXXFLAGS) src/modules.cpp tests/test_main.cpp -o test_runner
 
-test: 
-    build
+test: build
 	./test_runner
